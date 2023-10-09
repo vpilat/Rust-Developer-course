@@ -1,0 +1,1 @@
+/Users/vladimirpilat/Documents/GitHub/Rust-Developer-course/homework_2/target/package/homework_2-0.1.0/target/debug/homework_2: /Users/vladimirpilat/Documents/GitHub/Rust-Developer-course/homework_2/target/package/homework_2-0.1.0/src/main.rs
