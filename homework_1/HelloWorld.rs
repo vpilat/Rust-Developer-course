@@ -1,4 +1,7 @@
+//! Homework from Lesson 1
+/// Rust Programming Code Example
+
 fn main() {
     let message = "Hello world :)";     // what to display
-    println!("{}", message);            // send it to stdout
+    println!("{}", message);            // write it to stdout
 }
