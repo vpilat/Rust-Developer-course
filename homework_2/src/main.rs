@@ -19,6 +19,8 @@ fn main() {
 
     let slug = slugify("Hello world");
 
+    println!("Slugify string: {}", slug);
+
     // Print the line back out
     println!("You entered: {}", input);
 }
