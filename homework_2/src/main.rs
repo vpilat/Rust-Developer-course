@@ -1,26 +1,21 @@
-//! Homework from Lesson 2
+//! Homework from Lesson 2 - Rust Basics: Syntax and Variables
 /// Rust Programming Code Example
 
 use std::io;
+use std::env;
 extern crate slug;
 use slug::slugify;
 
 fn main() {
-    // Create a new instance of stdin
-    let stdin = io::stdin();
+    let args: Vec<String> = env::args().collect();
+    println!("{}", args[0]);
 
-    // Create a mutable string to store the input
     let mut input = String::new();
+    println!("Enter string please...");
+    io::stdin().read_line(&mut input).expect("Failed to read line");
 
-    // Read a line from stdin and store it in the 'input' string
-    stdin
-        .read_line(&mut input)
-        .expect("Failed to read line from stdin");
+    println!("Original: {}", input);
 
-    let slug = slugify("Hello world");
-
-    println!("Slugify string: {slug}");
-
-    // Print the line back out
-    println!("You entered: {}", input);
+    let slug = slugify(input);
+    println!("Slugified: {}", slug);
 }
