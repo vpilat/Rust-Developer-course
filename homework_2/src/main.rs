@@ -17,11 +17,11 @@ fn main() {
 
     println!("arg: {}", args[1]);                                                       // print cli args
 
-    let mut input = String::new();                                              // init var
+    let mut input = String::new();                                                  // init var
     
     println!("Enter source text, please...");                                           // print message (ask for string)
 
-    io::stdin().read_line(&mut input).expect("Failed to read text");           // read string from stdio
+    io::stdin().read_line(&mut input).expect("Failed to read text");            // read string from stdio
 
     print!("Input : {}", input);                                                        // print input string
 
